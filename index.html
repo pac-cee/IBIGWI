@@ -8,6 +8,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        #about, #contact {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,7 +100,7 @@
         </div>
     </header>
 
-    <nav>
+    <nav >
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
@@ -29,39 +112,64 @@
         <h2>Our Premium Services</h2>
         <div class="services-grid">
             <div class="service-card">
-                <img src="https://www.shutterstock.com/image-vector/advertsing-pr-online-service-platform-260nw-1954240462.jpg" alt="Advertising">
+                <img src="images/advertsing.jpg" alt="Advertising">
                 <h3>Advertising</h3>
                 <p>Strategic, impactful advertising campaigns that engage and convert your audience.</p>
             </div>
             <div class="service-card">
-                <img src="https://th.bing.com/th/id/OIP.VqxtlWgrsfErpOTyES3jxQHaEa?rs=1&pid=ImgDetMain" alt="Event Management">
+                <img src="images/event-management.jpg" alt="Event Management">
                 <h3>Event Management</h3>
                 <p>Comprehensive event planning and management, from concept to completion.</p>
             </div>
             <div class="service-card">
-                <img src="https://th.bing.com/th/id/OIP.riqgaIpHE5PORAL9s_JAPAHaE5?rs=1&pid=ImgDetMain" alt="Concerts">
+                <img src="images/conncerts.jpg" alt="Concerts">
                 <h3>Concerts</h3>
                 <p>Delivering high-energy, memorable concert experiences for artists and fans alike.</p>
             </div>
             <div class="service-card">
-                <img src="https://static.showit.co/1200/bxwGA0NvQoSUr7d1zn2N8A/shared/weddings-108.jpg" alt="Wedding Planning">
+                <img src="images/wedding-planning copy.jpg" alt="Wedding Planning">
                 <h3>Wedding Planning</h3>
                 <p>Bespoke wedding planning that turns your dream day into a reality.</p>
             </div>
             <div class="service-card">
-                <img src="https://th.bing.com/th/id/OIP.Uwd2UWivgj2YmX1m57-1CQHaE-?rs=1&pid=ImgDetMain" alt="Professional Meetings">
+                <img src="images/meetings.jpg" alt="Professional Meetings">
                 <h3>Professional Meetings</h3>
                 <p>Expert coordination of corporate meetings, ensuring smooth and productive outcomes.</p>
             </div>
             <div class="service-card">
-                <img src="https://cf.ltkcdn.net/christmas/images/std-sm/253174-423x282-party.webp" alt="Parties">
+                <img src="images//parties.jpg" alt="Parties">
                 <h3>Parties</h3>
                 <p>Unforgettable parties designed with flair and executed with precision.</p>
+            </div>
+            <!-- New Departments -->
+            <div class="service-card">
+                <img src="images/publicrelation.jpg" alt="Public Relations">
+                <h3>Public Relations</h3>
+                <p>Enhancing your brand’s image with expert PR strategies that build credibility and trust.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/catering-services.jpg" alt="Catering Services">
+                <h3>Catering Services</h3>
+                <p>Delicious, customized catering options that perfectly complement your event.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/decoranddesign copy.jpg" alt="Decor and Design">
+                <h3>Decor and Design</h3>
+                <p>Stylish, creative decor solutions that transform spaces and create lasting impressions.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/securityservices.jpg" alt="Security Services">
+                <h3>Security Services</h3>
+                <p>Professional security solutions to ensure the safety and success of your event.</p>
             </div>
         </div>
     </section>
 
     <section id="about">
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/advertsing.jpg" alt="Advertising">
+         
         <h2>About Us</h2>
         <p>At Ibigwi Protocol Agency, we pride ourselves on delivering unparalleled service with a personal touch. Our team of professionals is dedicated to understanding your unique vision and bringing it to life through meticulous planning and innovative solutions. Whether it's a large-scale concert or an intimate gathering, we ensure every detail is managed with care and expertise.</p>
         <p>With a reputation for excellence in Rwanda and beyond, we are your trusted partner in creating events that leave a lasting impact.</p>
@@ -70,15 +178,26 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>We're here to make your next event extraordinary. Reach out to us via the following channels:</p>
-        <p><strong>Telephone:</strong> +250789610326</p>
-        <p><strong>Email:</strong> <a href="mailto:agappenzabakiza@gmail.com">agappenzabakiza@gmail.com</a></p>
-        <p><strong>Address:</strong> Kigali, Remera, RWANDA</p>
-        <p><strong>Follow us on Instagram:</strong> <a href="https://instagram.com/ibigwiprotocolagency">@ibigwiprotocolagency</a></p>
+        <p><strong><a href="https://api.whatsapp.com/send/?phone=250789610326&text&type=phone_number&app_absent=0" target="_blank" class="icon-link">
+            <i class="fas fa-phone icon"></i>
+        </a>
+            
+        </i></strong> +250789610326</p>
+        <p><strong><i class="fas fa-envelope icon"></i>
+        </strong> <a href="mailto:agappenzabakiza@gmail.com">agappenzabakiza@gmail.com</a></p>
+        <p><strong><i class="fas fa-map-marker-alt icon"></i>
+        </strong> Kigali, Remera, RWANDA</p>
+        <p><strong><a href="https://www.instagram.com/ibigwi_protocol" target="_blank" class="icon-link">
+            <i class="fab fa-instagram icon"></i>
+        </a>
+        
+
+        </strong>@ibigwiprotocolagency</p>
     </section>
 
     <footer>
         <p>&copy; 2024 Ibigwi Protocol Agency. All rights reserved.</p>
-        <p>Crafted with care by <a href="https://www.linkedin.com/in/pacitekno">Mr. Paccee</a></p>
+        <p>Crafted with care by <a href="https://www.instagram.com/paccee17/,https://x.com/pacitekno12 ">Mr. Paccee</a></p>
     </footer>
 
     <script src="scripts.js"></script>
