@@ -10,97 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-    <style>
-        /* Basic styles */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            background-color: #444;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .service-card {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .service-card img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        #about, #contact {
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 600px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
-</head>
 <body>
     <header>
         <div class="header-container">
             <h1>Ibigwi Protocol Agency</h1>
-            <p class="motto">Your Wish is Our Command</p>
+            <p class="motto">Crafting Extraordinary Experiences</p>
         </div>
     </header>
 
-    <nav >
+    <nav>
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
@@ -137,15 +55,14 @@
                 <p>Expert coordination of corporate meetings, ensuring smooth and productive outcomes.</p>
             </div>
             <div class="service-card">
-                <img src="images//parties.jpg" alt="Parties">
+                <img src="images/parties.jpg" alt="Parties">
                 <h3>Parties</h3>
                 <p>Unforgettable parties designed with flair and executed with precision.</p>
             </div>
-            <!-- New Departments -->
             <div class="service-card">
                 <img src="images/publicrelation.jpg" alt="Public Relations">
                 <h3>Public Relations</h3>
-                <p>Enhancing your brand’s image with expert PR strategies that build credibility and trust.</p>
+                <p>Enhancing your brand's image with expert PR strategies that build credibility and trust.</p>
             </div>
             <div class="service-card">
                 <img src="images/catering-services.jpg" alt="Catering Services">
@@ -166,45 +83,51 @@
     </section>
 
     <section id="about">
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="images/advertsing.jpg" alt="Advertising">
-         
         <h2>About Us</h2>
-        <p>At Ibigwi Protocol Agency, we pride ourselves on delivering unparalleled service with a personal touch. Our team of professionals is dedicated to understanding your unique vision and bringing it to life through meticulous planning and innovative solutions. Whether it's a large-scale concert or an intimate gathering, we ensure every detail is managed with care and expertise.</p>
+        <p>At Ibigwi Protocol Agency, we pride ourselves on delivering unparalleled service with a personal touch. Our team of professionals is dedicated to understanding your unique vision and bringing it to life through meticulous planning and innovative solutions.</p>
         <p>With a reputation for excellence in Rwanda and beyond, we are your trusted partner in creating events that leave a lasting impact.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>We're here to make your next event extraordinary. Reach out to us via the following channels:</p>
-        <p><strong><a href="https://api.whatsapp.com/send/?phone=250789610326&text&type=phone_number&app_absent=0" target="_blank" class="icon-link">
-            <i class="fas fa-phone icon"></i>
-        </a>
-            
-        </i></strong> +250789610326</p>
-        <p><strong><i class="fas fa-envelope icon"></i>
-        </strong> <a href="mailto:agappenzabakiza@gmail.com" target="_blank">agappenzabakiza@gmail.com</a></p>
-        <p><strong><i class="fas fa-map-marker-alt icon"></i>
-        </strong> Kigali, Remera, RWANDA</p>
-        <p><strong><a href="https://www.instagram.com/ibigwi_protocol" target="_blank" class="icon-link">
-            <i class="fab fa-instagram icon"></i>
-        </a>
-        <a href="https://www.instagram.com/ibigwi_protocol" target="_blank">
-             </a>
-
-        </strong>@ibigwiprotocolagency</p>
+        <p>Ready to create something extraordinary? Reach out to us:</p>
+        
+        <div class="contact-grid">
+            <p>
+                <a href="https://api.whatsapp.com/send/?phone=250789610326&text&type=phone_number&app_absent=0" target="_blank" class="icon-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+                +250789610326
+            </p>
+            <p>
+                <a href="mailto:agappenzabakiza@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                agappenzabakiza@gmail.com
+            </p>
+            <p>
+                <span class="icon-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                Kigali, Remera, RWANDA
+            </p>
+            <p>
+                <a href="https://www.instagram.com/ibigwi_protocol" target="_blank" class="icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                @ibigwiprotocolagency
+            </p>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Ibigwi Protocol Agency. All rights reserved.</p>
-        <p>Crafted with care by <a href="https://x.com/pacitekno12 " target="_blank">Mr. Paccee</a>
-            <a href="" class="icon-link">
-               </a>
-        </p>
-        <P><a href="https://www.instagram.com/paccee17" target="_blank" class="icon-link">
-            <i class="fab fa-instagram icon"></i>
-        </a></P>
+        <p>Crafted with <i class="fas fa-heart"></i> by <a href="https://x.com/pacitekno12" target="_blank">Mr. Paccee</a></p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/paccee17" target="_blank" class="icon-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
